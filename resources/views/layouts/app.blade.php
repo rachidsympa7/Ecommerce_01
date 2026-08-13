@@ -42,7 +42,7 @@
                     Home
                 </a>
 
-                <a href="#" class="hover:text-gray-600">
+                <a href="{{ route('products.index') }}" class="hover:text-gray-600">
                     Products
                 </a>
 
