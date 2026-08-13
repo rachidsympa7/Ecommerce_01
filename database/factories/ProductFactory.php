@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends Factory<product>
  */
-class productfactoryFactory extends Factory
+class ProductFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -21,7 +21,7 @@ class productfactoryFactory extends Factory
             'name' => $this->faker->word(3,true),
             'description' => $this->faker->sentence(12),
             'price' => $this->faker->randomfloat(2,10,1000),
-            'imnage' => 'products/default.png',
+            'image' => 'products/default.png',
             'stock' => $this->faker->numberBetween(0,100),
         ];
     }
